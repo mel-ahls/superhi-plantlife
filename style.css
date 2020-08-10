@@ -8,6 +8,16 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+ul,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 @font-face {
   font-family: "IBM Plex Mono";
   src: url(assets/ibm-plex-mono.woff2), url(assets/ibm-plex-mono.woff);
@@ -26,11 +36,6 @@ body {
 	background-color: #ffffff;
   color: #2a2a2a;
   overflow-x: hidden;
-}
-
-h1 {
-  font-size: 24px;
-  font-weight: 700;
 }
 
 nav {
@@ -82,3 +87,36 @@ a.toggle-nav img {
   vertical-align: middle;
 }
 
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+section div {
+  width: 350px;
+}
+
+section div.content {
+  margin: 0 0 0 60px;
+}
+
+h1 {
+  font-family: "Young Serif";
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+p {
+  margin: 20px 0 20px 0;
+}
+
+a.button {
+  display: inline-block;
+  background-color: #00b98d;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+}
